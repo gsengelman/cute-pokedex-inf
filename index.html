@@ -1,0 +1,179 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="/05-JavaScript/tarefa-pokedex/style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="base">
+        <div class="div-principal">
+            <div class="div-esquerda rosa">
+                <div class="cima-esquerda">
+                    <div class="div-bolinhas">
+                        <div class="bola-azul" id="bolaAzulPiscando"></div>
+                        <div class="bolinha-superior roxo-claro"></div>
+                        <div class="bolinha-superior amarelo-claro"></div>
+                        <div class="bolinha-superior verde-claro"></div>
+                    </div>
+                    <div class="cima-direita">
+                        <div class="triangulo-esquerda"></div>
+                        <div class="lado-triangulo-esquerda rosa-claro"></div>
+                    </div>
+                </div>
+                <div class="div-esquerda-principal rosa-claro">
+                    <div class="div-interna-esquerda borda2">
+                        <div class="tela-branca borda2">
+                            <div class="tela-pokemon preto borda2">
+                                <div class="fundo-pokemon" id="fundoPokemon">
+                                    <img src="" class="imagem-pokemon" id="imagemPokemon">
+                                </div>
+                            </div>
+                            <div class="baixo-tela-pokemon">
+                                <div class="bolinha-vermelha-dentro vermelho"></div>
+                                <div class="quadradinho-hamburguer">
+                                    <div class="hamburguer"></div>
+                                    <div class="hamburguer"></div>
+                                    <div class="hamburguer"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="botoes-esquerda">
+                            <div class="botoes-esquerda-cima">
+                                <div class="botao-flat amarelo-claro borda2"></div>
+                                <div class="botao-flat verde-claro borda2"></div>
+                            </div>
+                            <div class="botoes-esquerda-meio">
+                                <div class="bola-vermelha vermelho"></div>
+                                <div class="caixa-direcional">
+                                    <div class="direcional direcional-cima roxo-escuro direcional-borda"></div>
+                                    <div class="meio-caixa-direcional">
+                                        <div
+                                            class="direcional direcionais-meio direcional-esquerda roxo-escuro direcional-borda">
+                                        </div>
+                                        <div
+                                            class="direcional direcionais-meio direcional-meio roxo-escuro direcional-borda">
+                                        </div>
+                                        <div
+                                            class="direcional direcionais-meio direcional-direita roxo-escuro direcional-borda">
+                                        </div>
+                                    </div>
+                                    <div class="direcional direcional-baixo roxo-escuro direcional-borda"></div>
+                                </div>
+                            </div>
+                            <div class="botoes-esquerda-baixo">
+                                <div class="bolinhas-pretas">
+                                    <div class="bolinha-preta preto"></div>
+                                    <div class="bolinha-preta preto"></div>
+                                    <div class="bolinha-preta preto"></div>
+                                </div>
+                                <div class="tela-verde verde-claro">
+                                    <p class="numero-pokemon fonte-telas" id="numeroPokemon"></p>
+                                </div>
+                                <div class="bolinha-pequena-baixo roxo-claro"></div>
+                                <div class="bolinhas-pretas">
+                                    <div class="bolinha-preta preto"></div>
+                                    <div class="bolinha-preta preto"></div>
+                                    <div class="bolinha-preta preto"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="div-meio rosa borda">
+                <div class="barra-cima borda"></div>
+                <div class="barra-meio"></div>
+                <div class="barra-baixo borda"></div>
+            </div>
+            <div class="div-direita">
+                <div class="superior-direita">
+                    <div class="dentro-superior-direita rosa-claro">
+                        <h1 class="titulo">Pokédex</h1>
+                    </div>
+                    <div class="triangulo-superior"></div>
+                </div>
+                <div class="direita-fundo-inferior rosa-claro">
+                    <div class="div-principal-direita borda2">
+                        <div class="direita-1">
+                            <div class="tela-direita preto borda2" id="fundoInfo">
+                                <p class="nome-pokemon fonte-telas" id="nomePokemon"></p>
+                                <div class="container-texto">
+                                    <p class="texto-desligado fonte-telas" id="tituloPesoPokemon">Peso:
+                                    </p>
+                                    <p class="peso-pokemon fonte-telas fonte-tela-verde" id="pesoPokemon"></p>
+                                </div>
+                                <div class="container-texto">
+                                    <p class="texto-desligado fonte-telas" id="tituloAlturaPokemon">
+                                        Altura:</p>
+                                    <p class="altura-pokemon fonte-telas fonte-tela-verde" id="alturaPokemon"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="direita-2">
+                            <div class="tela-azul">
+                                <div class="botao-azul botao-azul-1 borda2 azul-claro"></div>
+                                <div class="botao-azul botao-azul-1 borda2 azul-claro"></div>
+                                <div class="botao-azul botao-azul-1 borda2 azul-claro"></div>
+                                <div class="botao-azul botao-azul-1 borda2 azul-claro"></div>
+                                <div class="botao-azul botao-azul-2 borda2 azul-claro"></div>
+                                <div class="botao-azul botao-azul-3 borda2 azul-claro"></div>
+                                <div class="botao-azul botao-azul-3 borda2 azul-claro"></div>
+                                <div class="botao-azul botao-azul-3 borda2 azul-claro"></div>
+                                <div class="botao-azul botao-azul-3 borda2 azul-claro"></div>
+                                <div class="botao-azul borda2 azul-claro"></div>
+                            </div>
+                        </div>
+                        <div class="direita-3">
+                            <div class="botoes-direita-cima">
+                                <div class="bolinha-pequena-baixo vermelho"></div>
+                                <div class="bolinha-pequena-baixo vermelho"></div>
+                                <div class="telinha-cinza margem-esquerda preto borda2"></div>
+                                <div class="telinha-cinza preto borda2"></div>
+                            </div>
+                            <div class="telas-meio">
+                                <div class="tela-numero-pokemon borda2">
+                                    <div><input type="text" maxlength="3" class="caixa-de-texto" id="inputPokemon">
+                                    </div>
+                                </div>
+                                <div class="botao-confirma-pokemon borda2">
+                                    <button type="button" class="botao-funcional amarelo-claro" id="botao-go"
+                                        onclick="pegaPokemon()">GO</button>
+                                </div>
+                            </div>
+                            <div class="telas-baixo">
+                                <div class="tela-preta-direita-baixo preto borda2" id="telaPokemonAnterior">
+                                    <p class="nome-pokemon-anterior fonte-telas texto-tela-direita-baixo"
+                                        id="nomePokemonAnterior"></p>
+                                    <p class="numero-pokemon-anterior fonte-telas  fonte-preview-pokedex"
+                                        id="numeroPokemonAnterior"></p>
+                                </div>
+                                <div class="tela-preta-direita-baixo preto borda2 " id="telaProxPokemon">
+                                    <p class="nome-prox-pokemon fonte-telas texto-tela-direita-baixo"
+                                        id="nomeProxPokemon">
+                                    </p>
+                                    <p class="numero-prox-pokemon fonte-telas fonte-preview-pokedex"
+                                        id="numeroProxPokemon">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dados fonte-telas">
+            <p>CODE BY <a href="http://www.inf.ufrgs.br/~gsengelman/" class="texto-rosa">GRACIELA ENGELMAN</a></p>
+        </div>
+    </div>
+    <script src="/05-JavaScript/tarefa-pokedex/script/script.js"></script>
+</body>
+
+</html>
